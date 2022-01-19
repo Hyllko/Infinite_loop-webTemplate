@@ -1,0 +1,55 @@
+.contact {
+	background: url("../img/infinite-loop-03.jpg") 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.links {
+	display: flex;
+	justify-content: center;
+	padding: 0 toRem(32);
+}
+form {
+	::placeholder {
+		color: $primaryfont-color;
+	}
+}
+input,
+textarea {
+	background-color: transparent;
+	outline: none;
+	color: $primaryfont-color;
+	border: toRem(1) solid $primaryfont-color;
+	border-radius: toRem(4);
+	padding: toRem(13) toRem(15);
+	margin-bottom: toRem(18);
+}
+input:not([type="submit"]),
+textarea {
+	width: 80%;
+}
+input[type="submit"] {
+	background-color: $bg-color;
+	border: none;
+	width: 40%;
+	cursor: pointer;
+	transition: background-color 0.25s;
+	&:hover {
+		background-color: lighten($hover-color, 12%);
+	}
+}
+.social a {
+	font-size: toRem(20);
+	margin-bottom: toRem(48);
+	i {
+		margin-right: toRem(25);
+		vertical-align: middle;
+	}
+}
+footer {
+	text-align: center;
+	p {
+		margin-bottom: 0;
+		padding: toRem(80) 0 toRem(30) 0;
+	}
+}

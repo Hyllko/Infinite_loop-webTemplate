@@ -1,0 +1,64 @@
+.gallery-heading {
+	h2 {
+		color: $headingfont-color;
+	}
+	p {
+		color: darken($primaryfont-color, 90%);
+	}
+}
+.set {
+	display: flex;
+	transition: 0.45s ease-in-out;
+	position: relative;
+	z-index: 1;
+}
+.gallery-set {
+	overflow: hidden;
+	width: calc(toRem(300) * 3);
+	margin: 0 auto;
+	display: flex;
+	.image {
+		width: toRem(300);
+	}
+	figure {
+		cursor: pointer;
+		position: relative;
+		margin: 0;
+		padding: 0 toRem(16);
+		&:hover .hover-effect {
+			background-color: rgba(74, 55, 83, 0.5);
+			border-bottom: toRem(10) solid #3085a3;
+		}
+		&:hover figcaption {
+			bottom: toRem(20);
+			opacity: 1;
+		}
+	}
+	.hover-effect {
+		content: "";
+		position: absolute;
+		left: toRem(16);
+		top: 0;
+		width: calc(100% - toRem(32));
+		border-bottom: toRem(0) solid #3085a3;
+		height: 100%;
+		transition: 0.25s linear;
+	}
+	figcaption {
+		transition: 0.25s linear;
+		position: absolute;
+		bottom: toRem(50);
+		opacity: 0;
+		h3 {
+			font-size: toRem(20);
+			text-transform: uppercase;
+			font-weight: 300;
+			padding: 0 toRem(18);
+			margin: 0;
+			span {
+				font-weight: 700;
+				display: block;
+			}
+		}
+	}
+}

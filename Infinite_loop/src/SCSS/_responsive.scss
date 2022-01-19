@@ -1,0 +1,148 @@
+@media screen and (max-width: 1000px) {
+	.logo,
+	.menu a {
+		padding: toRem(10) toRem(15);
+	}
+}
+@media screen and (max-width: 990px) {
+	.container {
+		max-width: toRem(600);
+	}
+	.skills {
+		grid-template-columns: 1fr;
+		padding: {
+			top: toRem(20);
+		}
+	}
+	.WeDo {
+		margin-right: 0;
+		margin-bottom: toRem(50);
+		i {
+			position: static;
+			display: block;
+			text-align: center;
+		}
+	}
+	.content {
+		padding-left: 0;
+		margin-left: 0;
+	}
+	.what h2 {
+		padding-top: 0;
+	}
+	.testimonials {
+		background: url("../img/infinite-loop-02-mobile.jpg") center center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+
+		background-size: 100%;
+	}
+	.gallery-set,
+	.reviews {
+		width: calc(toRem(300) * 2);
+	}
+	.image,
+	.reviewer {
+		width: toRem(300);
+	}
+}
+@media screen and (max-width: 850px) {
+	header a {
+		font-size: toRem(20);
+	}
+}
+@media screen and (max-width: 768px) {
+	.page-header {
+		justify-content: space-between;
+		padding: toRem(5) toRem(17);
+	}
+	.menu a {
+		padding: toRem(8) toRem(10);
+	}
+	form {
+		width: 100%;
+		margin-bottom: toRem(30);
+	}
+	input:not([type="submit"]),
+	textarea {
+		width: 100%;
+	}
+	.links {
+		flex-flow: column;
+	}
+}
+@media screen and (max-width: 710px) {
+	.burger {
+		display: block;
+		opacity: 1;
+	}
+	.nav-bar {
+		position: absolute;
+		right: 0;
+		top: 55px;
+		height: 0;
+		overflow: hidden;
+		background-color: #fff;
+	}
+	.visible {
+		height: auto;
+	}
+	.menu {
+		flex-flow: column;
+		a {
+			text-align: center;
+			color: $hover-color;
+		}
+	}
+	.active a {
+		color: $primaryfont-color;
+	}
+}
+@media screen and (max-width: 650px) {
+	html,
+	body {
+		font-size: calc($font-size - 5%);
+	}
+	.gallery-set,
+	.reviews {
+		width: toRem(250);
+	}
+	.image,
+	.reviewer {
+		width: toRem(250);
+	}
+	.what,
+	.testimonials,
+	.gallery {
+		padding-bottom: 0;
+	}
+	.gallery-heading,
+	.contact-heading,
+	.test-heading {
+		padding-top: toRem(8);
+		padding-bottom: toRem(20);
+	}
+	.what h2 {
+		margin-top: 0;
+	}
+}
+@media screen and (max-width: 425px) {
+	.what h2 {
+		margin-top: toRem(16);
+		text-align: center;
+	}
+}
+@media screen and (max-width: 360px) {
+	.social a {
+		font-size: toRem(16);
+		margin-bottom: toRem(24);
+	}
+	.banner p {
+		font-size: 1.3rem;
+		text-align: center;
+	}
+	footer p {
+		margin: 0;
+		padding: 2rem 0;
+	}
+}

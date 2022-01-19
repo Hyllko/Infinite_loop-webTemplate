@@ -1,0 +1,66 @@
+html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body,
+html {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-size: $font-size;
+	font-family: $base-font;
+	font-weight: 400;
+	color: $primaryfont-color;
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+	color: $primaryfont-color;
+	display: block;
+	font-family: $base-font;
+	transition: 0.25s ease-in-out;
+}
+ul {
+	margin: 0;
+	padding-left: 0;
+}
+li {
+	list-style: none;
+}
+.container {
+	max-width: $section-width;
+	margin: 0 auto;
+	padding: 0 toRem(16);
+}
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+.gallery-heading,
+.contact-heading,
+.test-heading {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	line-height: 1.5;
+	padding: {
+		top: toRem(60);
+		bottom: toRem(60);
+	}
+	h2 {
+		font-size: toRem(40);
+		font-weight: 400;
+	}
+}
+.what,
+.testimonials,
+.gallery {
+	padding-bottom: toRem(80);
+}

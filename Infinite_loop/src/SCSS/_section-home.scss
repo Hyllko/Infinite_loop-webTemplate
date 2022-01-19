@@ -1,0 +1,104 @@
+.page-header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: toRem(8) toRem(20);
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	min-height: 55px;
+	font-size: toRem(22);
+}
+.page-header-scrolled {
+	transition: 0.25s;
+	background-color: $primaryfont-color;
+	border-bottom: toRem(1) solid rgba($bg-color, 0.1);
+	a,
+	.burger {
+		color: $hover-color;
+	}
+}
+
+.logo {
+	margin: 0;
+	font-weight: 700;
+	padding: toRem(10) toRem(30);
+}
+.burger {
+	cursor: pointer;
+	opacity: 0;
+	display: none;
+}
+
+.menu {
+	display: flex;
+	a {
+		padding: toRem(10) toRem(30);
+		font-weight: 300;
+
+		&:hover,
+		&:active {
+			color: $primaryfont-color;
+			background-color: $hover-color;
+		}
+	}
+}
+.active a {
+	color: $primaryfont-color;
+	background-color: $hover-color;
+}
+.home {
+	background: url("../img/infinite-loop-01.jpg") 50% 50%, no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.banner {
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	h2 {
+		font-size: toRem(56);
+		font-weight: 500;
+		text-shadow: 0 toRem(2) #111;
+		margin: {
+			bottom: toRem(24);
+			top: 0;
+		}
+	}
+	p {
+		font-size: 1.2rem;
+		line-height: 2;
+		margin: 0 0 1rem 0;
+		text-shadow: 0 toRem(1) #111;
+	}
+}
+.schroll-btn {
+	background-color: $schroll-bg-color;
+	position: absolute;
+	bottom: toRem(50);
+	padding: toRem(15) toRem(40);
+	animation: translateSchroll 1.25s ease-in-out 3;
+	i {
+		font-size: toRem(35);
+	}
+	&:hover,
+	&:active {
+		background-color: lighten($hover-color, 10%);
+		transform: scale(1.1);
+	}
+}
+@keyframes translateSchroll {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(toRem(10));
+		background-color: lighten($hover-color, 10%);
+	}
+}

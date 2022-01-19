@@ -1,0 +1,63 @@
+.inner {
+	padding: {
+		left: toRem(25);
+		right: toRem(25);
+	}
+}
+.what {
+	padding-top: 3.75rem;
+	h2 {
+		color: $headingfont-color;
+		font-weight: 400;
+		font-size: toRem(40);
+		padding-top: toRem(30);
+	}
+	p {
+		color: darken($primaryfont-color, 90%);
+		font-size: toRem(19);
+		line-height: 2;
+	}
+	a:first-child {
+		display: inline-block;
+		color: $headingfont-color;
+		&:hover {
+			color: darken(red, 5%);
+		}
+	}
+	i {
+		color: $headingfont-color;
+	}
+}
+.skills {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.WeDo {
+	position: relative;
+	margin-right: toRem(30);
+	i {
+		position: absolute;
+		left: 0;
+		font-size: toRem(53);
+		top: toRem(50);
+	}
+	h2 {
+		font-size: toRem(30);
+		font-weight: 500;
+	}
+}
+.content {
+	padding-left: toRem(70);
+	margin-left: toRem(20);
+	a {
+		display: inline-block;
+		font-size: toRem(19);
+		color: $primaryfont-color;
+		background-color: $bg-color;
+		padding: toRem(12) toRem(20);
+		&:hover,
+		&:active {
+			background-color: lighten($hover-color, 12%);
+		}
+	}
+}

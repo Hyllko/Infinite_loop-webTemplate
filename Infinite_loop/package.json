@@ -1,0 +1,21 @@
+{
+	"name": "infinite_loop",
+	"version": "1.0.0",
+	"browserslist": "> 0.5%, last 2 versions, not dead",
+	"source": "src/index.html",
+	"scripts": {
+		"dev": "parcel --dist-dir public --open",
+		"build": "parcel build --dist-dir public"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"lodash": "^4.17.21"
+	},
+	"devDependencies": {
+		"@parcel/transformer-image": "^2.2.0",
+		"@parcel/transformer-sass": "^2.2.0",
+		"parcel": "^2.2.0"
+	}
+}

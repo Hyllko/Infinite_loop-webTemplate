@@ -1,0 +1,17 @@
+// font variables
+$base-font: "Raleway", sans-serif;
+$font-size: 100%;
+
+//colors
+$primaryfont-color: #fff;
+$hover-color: #369;
+$headingfont-color: #37a;
+$schroll-bg-color: #357;
+$bg-color: #369;
+
+$section-width: 1275px;
+
+@function toRem($value, $base: 16) {
+	$result: calc($value/ $base);
+	@return $result * 1rem;
+}

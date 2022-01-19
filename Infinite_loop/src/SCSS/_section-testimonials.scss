@@ -1,0 +1,68 @@
+.testimonials {
+	background: url("../img/infinite-loop-02.jpg") no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	position: relative;
+}
+.bg-overlay {
+	background: rgba(20, 70, 80, 0.2);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.reviews {
+	overflow: hidden;
+	width: calc(toRem(300) * 3);
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+}
+
+.review-set {
+	display: flex;
+	transition: 0.45s ease-in-out;
+	position: relative;
+	z-index: 1;
+}
+.reviewer {
+	margin: 0;
+	padding: 0 toRem(16);
+	width: calc(toRem(300));
+	position: relative;
+	z-index: 1;
+
+	img {
+		max-width: toRem(130);
+		border-radius: 50%;
+	}
+	blockquote {
+		text-align: left;
+		line-height: 1.9;
+		margin: toRem(30) toRem(16);
+	}
+	figcaption {
+		text-align: right;
+		font-style: italic;
+	}
+}
+.slide-btn {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+	a {
+		width: toRem(16);
+		height: toRem(16);
+		background-color: darken(rgba(255, 255, 255, 0.5), 20%);
+		border-radius: 50%;
+		margin: toRem(40) toRem(18);
+		cursor: pointer;
+		&:hover,
+		&:active {
+			background-color: $hover-color;
+		}
+	}
+}
